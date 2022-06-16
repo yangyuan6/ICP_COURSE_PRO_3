@@ -1,35 +1,31 @@
 {
+  "version": 1,
+  "dfx": "0.9.3",
   "canisters": {
-    "ICP_COURSE_PRO_3": {
-      "main": "src/ICP_COURSE_PRO_3/main.mo",
-      "type": "motoko"
+    "icp_course_H_3": {
+      "type": "motoko",
+      "main": "src/icp_course_H_3/main.mo"
     },
-    "ICP_COURSE_PRO_3_assets": {
-      "dependencies": [
-        "ICP_COURSE_PRO_3"
-      ],
-      "frontend": {
-        "entrypoint": "src/ICP_COURSE_PRO_3_assets/src/index.html"
-      },
+    "icp_course_H_3_assets": {
+      "type": "assets",
       "source": [
-        "src/ICP_COURSE_PRO_3_assets/assets",
-        "dist/ICP_COURSE_PRO_3_assets/"
+        "src/icp_course_H_3_assets/assets"
       ],
-      "type": "assets"
+      "dependencies": [
+        "icp_course_H_3"
+      ]
     }
   },
   "defaults": {
     "build": {
-      "args": "",
-      "packtool": ""
+      "packtool": "",
+      "args": ""
     }
   },
-  "dfx": "0.8.4",
   "networks": {
     "local": {
       "bind": "127.0.0.1:8000",
       "type": "ephemeral"
     }
-  },
-  "version": 1
+  }
 }
